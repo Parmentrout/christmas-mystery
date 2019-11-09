@@ -13,26 +13,39 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="ui fixed inverted menu">
+        <!-- <div class="ui fixed inverted menu">
             <div class="ui container">
                 <a href="#" class="header item">
                         <img class="logo" src="./santa-logo.png">
                          <span class="gimme-space-left">  A Christmas Mystery</span>
                 </a>
             </div>
-        </div>
-        <div class="ui main text container lotta-space-top">
-            <h1 class="ui header">The Secret Recipe is...</h1>
-            <form class="ui form">
-                <div class="inline fields">
-                    <div class="field">
-                        <label>Insert Password to continue: </label>
-                        <input type="text" name="first-name" placeholder="Password">
+        </div> -->
+        <div class="snow-container">
+            <div class="snow foreground"></div>
+            <div class="snow foreground layered"></div>
+            <div class="snow middleground"></div>
+            <div class="snow middleground layered"></div>
+            <div class="snow background"></div>
+            <div class="snow background layered"></div>                
+            <div class="ui main text container lotta-space-top">
+                    <h1 class="ui header">The Secret Recipe is...</h1>
+                    <form id="drunk-form" class="ui form">
+                        <div class="inline fields">
+                            <div class="field">
+                                <label>Password: </label>
+                                <input type="text" id="password" name="first-name" placeholder="Password">
+                            </div>
+                            <button class="ui button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <!-- <div id="initialScreen">
+                        <img class="drunk-santa" src="./drunksanta.jpg">
+                    </div> -->
+                    <div id="decodedScreen">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem ut adipisci nemo quos aut ipsum amet cumque, dolorum quasi sit sequi, est pariatur dolores reiciendis tempore, velit magni reprehenderit.
                     </div>
-                    <button class="ui button" type="submit">Submit</button>
                 </div>
-            </form>
-            <img src="./drunksanta.jpg">
         </div>
     </body>
 </html>
