@@ -23,8 +23,19 @@ label {
     color:white !important;
 }
 
+p {
+    color: white !important;
+}
+
+.flex-img {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 20%;
+}
+
 /* Fucking snow! */
 .snow-container {
+
     position: absolute;
     width: 100%;
     max-width: 100%;
