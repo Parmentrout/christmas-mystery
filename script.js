@@ -22,7 +22,7 @@ $(() => {
             setErrorMessage('I see someone is just wildly guessing journal words, incorrect!')
         }
         else {
-            setErrorMessage('Incorrect Password!');
+           shuffleErrorMessage();
         }
     });
 
@@ -35,6 +35,22 @@ $(() => {
             text += ' Need a hint? Remember you can send us a text for a clue!'
         }
         $('#errorMessage').text(text);
+    }
+
+    function shuffleErrorMessage() {
+        let random = Math.random();
+        let message = '';
+        if (random < 0.25) {
+            message = 'Incorrect!  Keep Trying.'
+        } else if (random >= 0.25 && random < 0.5) {
+            message = 'Hmm, sorry that is incorrect.'
+        } else if (random >= 0.5 && random < 0.75) {
+            message = 'Nope, not the right password!'
+        } else {
+            message = 'Wrong!'
+        }
+
+        setErrorMessage(message);
     }
 
     function submittedJournalEntry(text) {
