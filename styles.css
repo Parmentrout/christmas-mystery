@@ -15,12 +15,23 @@
     position: relative;
 }
 
+#errorMessage {
+  z-index: 3;
+  position: relative;
+}
+
 h1 {
     color:white !important;
 }
 
 label {
     color:white !important;
+}
+
+.hint {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 p {
