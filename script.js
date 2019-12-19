@@ -33,7 +33,7 @@ $(() => {
     function setErrorMessage(text) {
         if (text) {
             text += ` Need a hint? Click  
-                <a class="hint" href="#" onClick="alert('What is a clue you thought was a dead end, but might be the answer?  Also its a communist bird...')"> Here </a>
+                <a class="hint" href="#" onClick="alert('What is a clue you thought was a dead end, but might be the answer?  Also its a communist fish...')"> Here </a>
                 `
         }
         $('#errorMessage').html(text);
